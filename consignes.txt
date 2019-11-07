@@ -1,0 +1,7 @@
+défis data : j’ai une liste d’event qui correspondent à l’interaction des utilisateurs avec une application. Pour simplifier, tu peux imaginer ca comme un tableau avec 2 colonnes : 1 colonne avec l’id de l’utilisateur et une colonne date+heure de l’event et on s’en fou du type de l’event.
+L’objectif est d’avoir un graph en bâton ou sur l’axe X on a week 1, week 2, week 3, etc. et sur l’axe y le pourcentage de personne qui reste qui ont été active sur l’app. La numérotation de la semaine c’est par rapport à l’inscription de l’utilisateur (=premier event capté pour cette utilisateur), donc c’est différent pour chacun.
+Donc par exemple pour week 1 y’aura toujours 100%, week 2 certain utilisateurs ne sont plus venu la 2 eme semaine après leur inscription donc imaginons 85%, etc.
+Mais il faut faire attention que par exemple un utilisateur qui s’est inscris il y a 4 semaines et qui est venu les 2 première semaines est compté comme étant venu pour semaine 1 et 2, est compté comme étant pas venu pour les semaines 3 et 4 et n’est pas pris en compte dans le calcul pour les semaines supérieur à 4.
+Good luck
+
+Si tu veux commencer avec une version plus facile, tu peux d'abord faire un graph où en x tu as la semaine même principe par rapport à l'inscription et en y le nombre d'utilisateurs qui sont venu à cette semaine. Donc la tu dois uniquement compter le nombre d'utilisateurs qui sont venu mais tu as pas besoin du nombre d'utilisateur qui ne sont pas venu (que tu as besoin pour calculer le pourcentage du défis initial)
